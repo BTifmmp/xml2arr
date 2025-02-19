@@ -9,18 +9,17 @@ def extract(xml_file: string) -> list:
 
   coordinates = []
 
-  # Loops through each object (assuming 'object' is the tag where these values are stored)
-  for obj in root.findall('.//object'):  # Change this to your specific XML structure
+  # Loops through each object
+  for obj in root.findall('.//object'):
       xmin = obj.find('.//bndbox/xmin').text
       ymin = obj.find('.//bndbox/ymin').text
       xmax = obj.find('.//bndbox/xmax').text
       ymax = obj.find('.//bndbox/ymax').text
 
-      # Append the coordinates as a tuple (or as a list, based on your needs)
+      # Append the coordinates
       coordinates.append([int(xmin), int(ymin), int(xmax), int(ymax)])
-
-  # Print out the list of coordinates
-  print(coordinates)
+  
+  return coordinates
 
 
 def extract_to_file(xml_path: string, out_path: string, pprint: bool=False) -> None:
