@@ -1,1 +1,1 @@
-from extractor import extract, extract_to_file
+from .extractor import extract, extract_to_file

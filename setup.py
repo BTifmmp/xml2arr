@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.1'
+VERSION = '0.1.3'
 
 # read the contents of your README file
 from pathlib import Path
@@ -12,6 +12,7 @@ setup(
   version=VERSION,
   author="Blazej Turczynowicz",
   author_email="blazejturczynowicz@gmail.com",
+  description="Extract bounding boxes from XML format to list",
   packages=find_packages(),
   long_description=long_description,
   long_description_content_type='text/markdown',
