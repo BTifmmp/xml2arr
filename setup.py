@@ -11,9 +11,9 @@ setup(
   name="xml2arr", 
   version=VERSION,
   author="Blazej Turczynowicz",
-  author_email="<blazejturczynowicz@gmail.com>",
+  author_email="blazejturczynowicz@gmail.com",
   packages=find_packages(),
   long_description=long_description,
   long_description_content_type='text/markdown',
-  keywords=['python', 'bounding box', 'xml' 'coordinates'],
+  keywords=['bounding box', 'xml', 'xml2arr'],
 )
